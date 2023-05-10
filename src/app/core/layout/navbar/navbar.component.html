@@ -1,1 +1,25 @@
-<p>navbar works!</p>
+<nav class="navbar sticky-top navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" [ngClass]="{'active': route === ''}" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': route === 'about-us'}" [routerLink]="['/about-us']">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': route === 'contact'}" [routerLink]="['/contact']">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': route === 'register'}" [routerLink]="['/register']">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

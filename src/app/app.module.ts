@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './core/layout/navbar/navbar.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { LayoutModule } from './core/layout/layout.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LayoutModule } from './core/layout/layout.module';
     HomeComponent,
     AboutUsComponent,
     ContactComponent,
-    RegisterComponent
+    RegisterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,8 @@ import { LayoutModule } from './core/layout/layout.module';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: []
+  exports: [
+    PageNotFoundComponent
+  ]
 })
 export class AppModule { }
