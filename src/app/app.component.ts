@@ -9,7 +9,7 @@ export class AppComponent {
   title = '25-tech';
   date: any;
   now: any;
-  targetDate: any = new Date(2023, 4, 30);
+  targetDate: any = new Date(2023, 12, 01);
   targetTime: any = this.targetDate.getTime();
   difference!: number;
   months: Array<string> = [
